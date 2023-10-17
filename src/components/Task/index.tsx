@@ -15,7 +15,7 @@ interface TaskProps {
 
 export function Task({ task, onChange, onRemove }: TaskProps) {
   return (
-    <TouchableOpacity style={task.done ? styles.containerDone : styles.container} onPress={onChange}>
+    <TouchableOpacity activeOpacity={0.6} style={task.done ? styles.containerDone : styles.container} onPress={onChange}>
       <View style={task.done ? styles.checkboxChecked : styles.checkbox}>
         {task.done && <AntDesign name='check' color={colors.gray100} />}
       </View>

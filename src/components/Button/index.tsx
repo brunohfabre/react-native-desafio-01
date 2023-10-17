@@ -10,7 +10,7 @@ interface ButtonProps {
 
 export function Button({ children, onPress, variant = 'primary' }: ButtonProps) {
   return (
-    <TouchableOpacity style={variant === 'primary' ? styles.container : styles.containerGhost} onPress={onPress}>
+    <TouchableOpacity activeOpacity={0.6} style={variant === 'primary' ? styles.container : styles.containerGhost} onPress={onPress}>
       {children}
     </TouchableOpacity>
   )
