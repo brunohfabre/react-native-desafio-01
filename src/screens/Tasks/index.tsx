@@ -90,7 +90,8 @@ export function Tasks() {
           <FlatList
             contentContainerStyle={{
               paddingHorizontal: 24,
-              paddingBottom: 64
+              paddingBottom: 64,
+              gap: 8
             }}
             data={tasks}
             keyExtractor={(item) => item.content}
